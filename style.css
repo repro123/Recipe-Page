@@ -1,0 +1,84 @@
+@import url(https://fonts.google.com/specimen/Young+Serif);
+@import url(ht?tps://fonts.google.com/specimen/Outfit);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Young Serif", "Outfit";
+  margin: 0 auto;
+  line-height: 2rem;
+}
+main {
+  background-color: hsl(0, 0%, 100%);
+  width: 40%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 2rem;
+  border-radius: 16px;
+}
+nav img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+header,
+.Section1,
+.Section1 .Unordered {
+  margin-top: 20px;
+}
+header p,
+.Section1 .PrepTime ul,
+.Section1 .Unordered ul,
+.Section2 .ordered ol,
+.Section3 .Nutrition p {
+  margin-top: 15px;
+}
+.Section1 .PrepTime {
+  background-color: hsl(30, 54%, 90%);
+  padding: 1rem;
+  border-radius: 12px;
+}
+.Section1 .PrepTime ul li,
+.Section1 .Unordered ul li,
+.Section2 .ordered ol li {
+  margin-left: 1rem;
+}
+.PrepTime h3,
+.PrepTime li::marker {
+  color: hsl(332, 51%, 32%);
+}
+h2,
+.ordered li::marker,
+span {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+hr {
+  height: 0.5px;
+  border-color: hsl(30, 54%, 90%);
+}
+table {
+  width: 100%;
+}
+table td {
+  border-bottom: 1px solid;
+  border-color: hsl(30, 54%, 90%);
+}
+@media (max-width: 1000px) {
+  body {
+    max-width: 375px;
+  }
+  main {
+    width: 100%;
+  }
+}
